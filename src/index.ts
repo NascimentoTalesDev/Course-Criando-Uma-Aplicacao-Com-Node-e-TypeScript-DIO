@@ -13,10 +13,10 @@ server.get("/", ( request : Request, response: Response ) =>{
 })
 
 //create a user
+server.get("/user", userController.getAllUsers )
 server.post("/user", userController.createUser )
 
 server.listen(PORT, () => {
     console.log("Server on");
-    
 })
 
